@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number To Word</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" language="javascript" src="numberToWord.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+           $('#num').focus();
+           $('#demo').num2words();
+        }); 
+    </script>
+    <style>
+        body { background-color:#fafafa;}
+        .container { max-width:640px; margin:150px auto;}
+    </style>
+</head>
+    <div id="demo" class="container"><h2> Enter amount: </h2>
+      <input id="num" type="text" class="form-control" placeholder="$"><br>
+    <br>
+      <input id="trans" type="button" value="Convert to words" class="btn btn-danger"><br>
+    <br>
+      <div class="well"></div>
+    </div>
+    </body>
+</html>
